@@ -96,5 +96,3 @@ Sự khác biệt là PUT dùng để thay thế toàn bộ tài nguyên, nên c
    400	Bad Request, dữ liệu gửi lên không hợp lệ	Thêm sinh viên nhưng thiếu tên hoặc nhập sai định dạng
    404	Not Found, không tìm thấy tài nguyên	Gọi GET /students/999 nhưng không có sinh viên nào có id là 999
    500	Internal Server Error, lỗi bên trong server	Server bị lỗi code hoặc lỗi kết nối database
-
-Tóm lại, status code giúp client biết được kết quả của request. Nếu thành công có thể trả về 200, 201 hoặc 204; nếu lỗi từ phía client thường là 400 hoặc 404; còn lỗi phía server thường là 500.
